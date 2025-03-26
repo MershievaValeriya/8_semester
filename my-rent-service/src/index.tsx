@@ -1,9 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './components/app/app';
+import {Setting} from './const';
 
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    
-  </StrictMode>,
-)
+root.render(
+  <React.StrictMode>
+    <App 
+    rentalOffersCount={Setting.rentalOffersCount }/>
+  </React.StrictMode>
+);
