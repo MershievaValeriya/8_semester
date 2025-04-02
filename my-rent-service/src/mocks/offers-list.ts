@@ -95,4 +95,31 @@ export const offersList : OffersList[] =
         'rating': 4.8
     },
     
+
+
+
+    {
+        'id': '5',
+        'title': 'Stylish apartment  Near Amsterdams Attractions',
+        'type': 'apartment',
+        'price': 200,
+        'previewImage': '../../public/img/apartment-05.jpg',
+        'city': {
+        'name': 'Amsterdam',
+        'location': {
+            'latitude': 52.3809553943508,
+            'longitude':  4.939309666406198,
+            'zoom': 13
+            }
+        },
+        'location': {
+            'latitude': 52.3809553943508,
+            'longitude': 4.939309666406198,
+            'zoom': 16
+        },
+        'isFavorite': true,
+        'isPremium': false,
+        'rating': 4.9
+    },
+    
 ]

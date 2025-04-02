@@ -3,6 +3,7 @@ import CitiesCard from "../cities-card/cities-card";
 
 type CitiesCardListProps = {
     offersList: OffersList[];
+    onHover: (id: string | null) => void;
 };
 
 function CitiesCardList( { offersList }: CitiesCardListProps) {

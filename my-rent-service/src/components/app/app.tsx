@@ -7,18 +7,16 @@ import LoginPage from "../login/login";
 import OfferPage from "../offer/offer";
 import NotFoundPage from "../not-found-page/not-found-page";
 import { PrivateRoute } from "../private-route/private-route";
-import { FullOffer, OffersList } from "../../types/offer";
+import { FullOffer} from "../../types/offer";
 
 
 type AppMainPageProps = {
-    rentalOffersCount: number;
-    offersList: OffersList[];
     offers: FullOffer[];
 }
 
 
 
-function App({ rentalOffersCount, offersList, offers }: AppMainPageProps): JSX.Element {
+function App({offers }: AppMainPageProps): JSX.Element {
 
 
     return (
@@ -26,7 +24,7 @@ function App({ rentalOffersCount, offersList, offers }: AppMainPageProps): JSX.E
             <Routes>
                 <Route
                     path={AppRoute.Main}
-                    element={<MainPage rentalOffersCount={rentalOffersCount} offersList={offersList} />} />
+                    element={<MainPage/>} />
                 <Route path={AppRoute.Favorites}
                     element={
                         <PrivateRoute authorizationStatus={AuthorizationStatus.Auth}>

@@ -16,9 +16,9 @@ function NotFoundPage(): JSX.Element {
       <main className="page__main page__main--not-found">
         <div className="container">
           <section className="not-found">
-            <h1 className="not-found__title">404 - Page Not Found</h1>
-            <p className="not-found__message">Oops! The page you are looking for does not exist.</p>
-            <a className="error-page__link" href="index.html">Return to Homepage</a>
+            <h1 className="not-found__title">404 - Not Found</h1>
+            <p className="not-found__message">The page does not exist.</p>
+            <a className="error-page__link" href="index.html">Go back to the main page.</a>
           </section>
         </div>
       </main>

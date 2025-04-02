@@ -10,6 +10,7 @@ type CitiesCardProps = {
   isPremium: boolean;
   previewImage: string;
   rating: number;
+  className?: string; 
 };
 
 function CitiesCard({id,title,type,price,previewImage,isPremium,rating,}: CitiesCardProps): JSX.Element {
